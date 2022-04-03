@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background-color: #000000;
+    font-family: Quantico;
+    color: #f2f2f2;
+    font-size: 1.5em;
+}
+
+ul.nav{
+    padding: 0px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
+}
+
+header i{
+ padding: 10px;   
+}
+
+header img{
+    width: 180px;
+    margin: 0px 20px;
+}
