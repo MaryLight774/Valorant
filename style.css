@@ -7,6 +7,7 @@ html{
 body{
     margin: 0;
     background-color: #f2f2f2;
+    font-family: 'Quicksand';
 }
 
 /*Formatações Gerais*/
@@ -21,8 +22,17 @@ h1{
     font-family: Quantico;
 }
 
+h2{
+    font-family: Quantico;
+}
+
 p{
     font-family: Quicksand;
+}
+
+a{
+    text-decoration: none;
+    color: #f2f2f2;
 }
 
 img.figures {
@@ -105,38 +115,41 @@ header img{
 
 /*Agentes*/
 .agentes{
+    margin: 0;
     padding-top: 50px;
-    margin: 50px 0;
+    padding-bottom: 20px;
     justify-content: space-around;
     display: flex;
 }
 
 /*Mapas*/
 .mapa{
-    margin: 50px 0;
-    margin-bottom: 0;
+    margin: 0;
     padding-top: 50px;
+    padding-bottom: 20px;
     background-color: #FF495B;
     color: #f2f2f2;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 20px;
+    
 }
 
 
 /*Arsenal*/
 .arsenal{
+    margin: 0;
     padding-top: 50px;
+    padding-bottom: 20px;
     background-color: #0F1823;
     color: #f2f2f2;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 20px;
 }
 
 /*Botões*/
 button{
     font-family: Quantico;
+    cursor: pointer;
 }
 
 #button1{
@@ -169,16 +182,223 @@ button{
     font-size: 0.5em;
 }
 
+/*Container_texto1*/
+.container_text1 h2{
+    color: #000000;
+    text-align: right;   
+}
 
-@media screen and (max-width: 700px){
-    header{
+.container_text1 h1{
+    font-size: 4em;
+    color: #000000;
+}
+
+.container_text1 .text_agentes{
+    width: 50%;
+    margin-left: 100px;
+    font-size: 1.2em;
+}
+
+.container_text1{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: right;
+}
+
+.no-bold{
+    font-weight: normal;
+    font-family: Quicksand;
+    font-size: 0.9em;
+}
+
+section.habilidades{
+    font-size: 0.8em;
+}
+
+/*Container_text2*/
+.container_text2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #0F1823;
+    color: #f2f2f2;
+}
+
+.container_text2 .text_agentes{
+    width: 50%;
+    margin-right: 100px;
+    font-size: 1.2em;
+}
+
+.container_text2 h2{
+    color: #f2f2f2;
+    text-align: left;   
+}
+
+.container_text2 h1{
+    font-size: 4em;
+    color: #f2f2f2;
+}
+
+
+
+@media screen and (max-width: 950px){
+    .text{
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width: 925px){
+    .container1{
+        height: 50vh;
+    }
+    
+    img.figures{
+        display: none;
+    }
+
+    .text{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container1 h1, h2{
+        font-size: 5em;
+    }
+
+    .container_text1 h1, h2{
         font-size: 1em;
     }
+}
 
-    .nav li ul li{
-        border-bottom:1px #c0c0c0 solid;
-        display:block;
-        width:100px;
-        height: 30px;
+@media screen and (max-width: 500px) {
+    .container1 h1, h2{
+        font-size: 3em;
     }
+
+    .text{
+        font-size: 1.5em;
+        padding: 0;
+    }
+
+    .agentes{
+        padding: 0;
+        margin: 0;
+    }
+
+    .mapa{
+        padding: 0;
+        margin: 0;
+    }
+
+    .arsenal{
+        padding: 0;
+        margin: 0;
+    }
+
+    header li{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .container1{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .container_text1{
+        display: flex;
+        justify-content: space-around ;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: right;
+    }
+ 
+    .container_text2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #0F1823;
+        color: #f2f2f2;
+    }
+
+    .container_text1 h2{
+        color: #000000;
+        text-align: center;   
+    }
+    
+    .container_text1 h1{
+        font-size: 4em;
+        color: #000000;
+        text-align: center;
+    }
+
+    .container_text1 h3{
+        text-align: center;
+    }
+
+    .container_text1 .text_agentes{
+        width: 70%;
+        margin: 0;
+        font-size: 1.2em;
+    }
+    
+    .container_text2 .text_agentes{
+        width: 70%;
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+    .container_text2 h2{
+        color: #f2f2f2;
+        text-align: center;   
+    }
+    
+    .container_text2 h1{
+        font-size: 4em;
+        color: #f2f2f2;
+        text-align: center;
+    }
+
+    .container_text2 h3{
+        text-align: center;
+    }
+    
+    .text_agentes p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .img_agentes img{
+        width: 200px;
+    }
+
+    .img_agentes{
+        width: 200px;
+    }
+
+    .container_text1 h1, h2, h3{
+        font-size: 1.2em;
+    }
+
+    .container_text2 h1, h2, h3{
+        font-size: 1.2em;
+    }
+
 }
