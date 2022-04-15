@@ -35,7 +35,7 @@ a{
     color: #f2f2f2;
 }
 
-.fa-solid{
+i.fa-solid{
     display: none;
 }
 
@@ -284,6 +284,67 @@ section.habilidades{
 }
 
 
+/*Arsenal*/
+.container_arsenal{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #0F1823;
+    color: #f2f2f2;
+    padding: 30px;
+}
+
+.title_arsenal{
+    font-size: 5.5em;
+    text-align: center;
+    background-color: #0F1823;
+    margin: 0;
+    padding: 50px;
+    color: #f2f2f2;
+}
+
+
+.armas{
+    background-color: #FF495B;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 50px;
+    padding: 50px;
+    transition: all 0.3s ease;
+}
+
+.armas:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.armas img{
+    width: 450px;
+}
+
+.armas h2{
+    color: #f2f2f2;
+    font-size: 4em;
+}
+
+
+.subtitle{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.description{
+    margin: 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
 
 @media (max-width: 950px){
     .text{
@@ -321,6 +382,88 @@ section.habilidades{
     }
 }
 
+@media (max-width: 1020px){
+    .title_arsenal{
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 620px){
+    .armas{
+        width: 300px;
+    }
+
+    .armas img{
+        width: 250px;
+    }
+
+    .title_arsenal{
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 520px){
+    .armas{
+        width: 250px;
+        font-size: 0.7em;
+    }
+
+    .armas img{
+        width: 200px;
+    }
+
+    .title_arsenal{
+        font-size: 2em;
+        padding: 10px;
+    }
+
+    .container_arsenal{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 360px){
+    .armas{
+        width: 200px;
+        font-size: 0.7em;
+        margin: 20px auto;
+    }
+
+    .armas img{
+        width: 150px;
+    }
+
+    .title_arsenal{
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    .container_arsenal{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 320px){
+    .armas{
+        width: 100px;
+        font-size: 0.5em;
+        margin: 20px auto;
+    }
+
+    .armas img{
+        width: 100px;
+    }
+
+    .title_arsenal{
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    .container_arsenal{
+        padding: 10px;
+    }
+}
+
 @media (max-width: 500px) {
     .container1 h1, h2{
         font-size: 3em;
@@ -350,7 +493,7 @@ section.habilidades{
         display: none;
     }
 
-    .fa-solid{
+    i.fa-solid{
         display: flex;
         margin: 30px;
     }
