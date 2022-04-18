@@ -138,6 +138,14 @@ header img{
     display: flex;
 }
 
+.text_agentes h2{
+    margin: 30px 0;
+}
+
+.text_agentes h3{
+    margin: 20px 0;
+}
+
 /*Mapas*/
 .mapa{
     margin: 0;
@@ -284,6 +292,8 @@ section.habilidades{
     color: #f2f2f2;
     padding-left: 50px;
     padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
 }
 
@@ -413,6 +423,14 @@ section.habilidades{
 
     .title_arsenal{
         font-size: 2.5em;
+    }
+
+    .text_agentes h2{
+        margin-top: 30px 0;
+    }
+
+    .text_agentes h3{
+        margin: 20px 0;
     }
 }
 
@@ -593,8 +611,16 @@ section.habilidades{
 
     .text_mapa{
         text-align: center;
-        padding: 0 30px;
+        padding: 30px;
     }
+
+    .text_agentes h2{
+        margin-top: 30px 0;
+    }
+
+    .text_agentes h3{
+        margin: 20px 0;
+    }   
 }
 
 @media (max-width: 600px) {
@@ -746,6 +772,15 @@ section.habilidades{
         flex-direction: column;
     }  
 
+    #button1{
+        margin: 20px;
+    }
+    #button2{
+        margin: 20px;
+    }
+    #button3{
+        margin: 20px;
+    }
 }
 
 @media (max-width: 830px) {
@@ -754,7 +789,7 @@ section.habilidades{
     }
       .nav{
         display: flex;
-        top: 6vh;
+        top: 8vh;
         right: 0;
         width: 70vw;
         height: 100vh;
