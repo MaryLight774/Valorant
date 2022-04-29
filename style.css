@@ -146,6 +146,20 @@ header img{
     margin: 20px 0;
 }
 
+.container_text1 a{
+    color: #0F1823;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: right;
+}
+
+.container_text2 a{
+    color: #f2f2f2;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: left;
+}
+
 /*Mapas*/
 .mapa{
     margin: 0;
@@ -602,6 +616,20 @@ section.habilidades{
     
     .text_agentes p{
         text-align: center;
+    }
+
+    .container_text1 a{
+        color: #0F1823;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container_text2 a{
+        color: #f2f2f2;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
     }
 
     .container_mapa{
